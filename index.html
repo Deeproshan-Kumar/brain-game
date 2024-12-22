@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Brain Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="cards" id="cards">
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+        <article class="card">
+          <div class="image"></div>
+        </article>
+      </section>
+
+      <div class="game-controls">
+        <button class="button" id="show-cards" style="--clr: #8e44ad">
+          View Characters
+        </button>
+        <button class="button" id="play-btn" disabled style="--clr: #0984e3">
+          Let's Play
+        </button>
+        <button
+          class="button"
+          id="shuffle-cards"
+          disabled
+          style="--clr: #f53b57"
+        >
+          Shuffle Characters
+        </button>
+        <button class="button" id="restart" disabled style="--clr: #27cd27">
+          Restart
+        </button>
+      </div>
+    </main>
+    <div id="modal" class="modal">
+      <h2>Game Instructions ⚠️</h2>
+      <div class="game-instructions">
+        <ul>
+          <li>
+            <strong>🎮 Game Actions</strong>
+            <ul>
+              <li>Click on the View Cards button to view all the cards.</li>
+              <li>Click on the Let's Play button to play the game.</li>
+              <li>Click on the Shuffle Cards button to shuffle the cards.</li>
+              <li>Click on Restart button to restart the game.</li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            <strong>🎮 Game Rules</strong>
+            <ul>
+              <li>
+                There are a total of 16 cards, each with a character, and each
+                character has a duplicate.
+              </li>
+              <li>A random character will appear when you start the game.</li>
+              <li>
+                You have to guess the position of its duplicate by clicking on
+                the cards.
+              </li>
+              <li>
+                You have a total of 3 attempts to guess the correct position of
+                the duplicate character.
+              </li>
+              <li>
+                If you exceed the maximum attempt limit, all the character
+                positions will be revealed, and you can restart the game and
+                play again in the same manner.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <button class="button understood" id="understood">Understood</button>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <div id="toast" class="toast"></div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
